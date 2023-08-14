@@ -3,6 +3,8 @@ class CoffeeTools {
   String coffeeType;
   double coffeeAmount;
 
+//Determines the type of cofee based on the input string coffee 
+//and sets the coffeetype variable 
   void setCoffeetype(String coffee) {
     if (coffee == "French Press") {
       coffeeType = "Course ground coffee";
@@ -11,6 +13,9 @@ class CoffeeTools {
     }
   }
 
+//calculates the amount of water in grams based on the user input 
+//and then calculates the amount of coffee that should be used depending 
+//on the coffee type
   void convertWater(String number) {
     double convert = double.parse(number);
     gramsOfWater = 177.42 * convert;
